@@ -87,39 +87,89 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-
+//----------------------------------------- Total Number Of Months ----------------------------------------------------------------------
 //1) the total number of months included in the dataset:
-// Total Months:
-
-
 let TotalMonths = finances.length;
 console.log(("Total Month : "+TotalMonths))
 
 
-console.log(finances.values[1]) 
-// [24][1]
+//------------------------------------------------------------------------------------------------
+// console.table(finances);    // table: index & array value
 
-CurrentMonth = finances[i][1]
-PreviousMonth = CurrentMonth -1
-console.log(CurrentMonth + PreviousMonth); 
+// Current Month values 
+var CurrentMonth = [];
 
-NetChange = 0
-
-// for (var i = 0; i = finances.length-1; i++)
-// NetChange.push(finances[i][1] -)
-
-
-
-
+for (i=0; i < finances.length; i++) {
+    CurrentMonth.push = finances [i][1];
+    console.log("CurrentMonth "+ finances [i][1]); 
+    console.table(CurrentMonth);
+};
+//console.log(CurrentMonth);
+//console.table(finances);
 
 
+// Previous Month Values 
 
+ //console.log("Previous Month");
+
+for( i=0; i < finances.length; i++ ) {
+    if (i!=0) {
+    var PreviousMonth = finances [i-1][1] 
+    // console.log("CurrentMonth "+ finances [i][1]); 
+    console.log(PreviousMonth);}
+    else {var PreviousMonth = 0}
+};
+
+
+
+
+
+console.log("Change in VAlue");
+/*
+for(i=1; i < finances.length; i++){
+    var ValueChange =finances[i][1] - PreviousMonth
+    console.log("CM "+ CurrentMonth +"\nPM "+ PreviousMonth +"\nVC " +ValueChange)
+    
+}
+
+for(i=1; i < CurrentMonth.length; i++){
+    var ValueChange = CurrentMonth - PreviousMonth
+    console.log("CM "+ CurrentMonth +"\nPM "+ PreviousMonth +"\nVC " +ValueChange)
+    
+} */
+
+
+
+
+
+
+    
+
+
+// ---------------------------------------------------------------------------------
 
 
 //2) total amount of profit/loses for entire period
 // Total:
 
-console.table(finances);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
