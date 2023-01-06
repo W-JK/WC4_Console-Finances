@@ -89,12 +89,37 @@ var finances = [
 
 
 //1) the total number of months included in the dataset:
+// Total Months:
+
+
+let TotalMonths = finances.length;
+console.log(("Total Month : "+TotalMonths))
+
+
+console.log(finances.values[1]) 
+// [24][1]
+
+CurrentMonth = finances[i][1]
+PreviousMonth = CurrentMonth -1
+console.log(CurrentMonth + PreviousMonth); 
+
+NetChange = 0
+
+// for (var i = 0; i = finances.length-1; i++)
+// NetChange.push(finances[i][1] -)
+
+
+
+
+
 
 
 
 
 //2) total amount of profit/loses for entire period
+// Total:
 
+console.table(finances);
 
 
 
