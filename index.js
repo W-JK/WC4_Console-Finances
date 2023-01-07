@@ -115,6 +115,33 @@ for( i=1; i < finances.length; i++ ) {
 //console.table(PreviousMonth);
 
 //--------------------------------------------- Current and Previous month variables end ---------------------------------
-//--------------------------------------------- Total Profit/Loss Per Month ----------------------
+
+
+//--------------------------------------------- Total Profit/Loss Month to Month ----------------------
+
+const ChangeInValue=[]; 
+console.log(ChangeInValue)
+
+
+for (i=0;i<finances.length;i++){
+ChangeInValue.push(Number(CurrentMonth[i]-PreviousMonth[i]))}
+
+/* array checksums */
+// console.log("Date & Value"+ finances + "\nCM Value " + CurrentMonth )
+/* console.log("\nCM Value " + CurrentMonth  
+        + "\nPM Value " + PreviousMonth
+        + "\nChange " + ChangeInValue) */
+
+//console.log("Date & Current Value " + finances + "\nProfit/Loss " + ChangeInValue)
+
+
+
 //2) total amount of profit/loses for entire period
+
+
+
+
+
+
+
 // Total:
