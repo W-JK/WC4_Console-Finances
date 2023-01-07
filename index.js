@@ -114,4 +114,7 @@ for( i=1; i < finances.length; i++ ) {
 //console.table(CurrentMonth);
 //console.table(PreviousMonth);
 
-//--------------------------------------------- Current and Previous month variables ---------------------------------
+//--------------------------------------------- Current and Previous month variables end ---------------------------------
+//--------------------------------------------- Total Profit/Loss Per Month ----------------------
+//2) total amount of profit/loses for entire period
+// Total:
