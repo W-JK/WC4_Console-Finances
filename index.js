@@ -92,17 +92,26 @@ var finances = [
     let TotalMonths = finances.length;
     console.log(("Total Month : "+TotalMonths))
 
-    console.table(finances);
+    //console.table(finances);
+//--------------------------------------------- Current and Previous month variables ---------------------------------------------------
 
-
-
-    const CurrentMonth = [];
-    for( i=0; i < finances.length; i++ ) {
-        CurrentMonth.push(finances[i][1]
+const CurrentMonth = [];
+for( i=0; i < finances.length; i++ ) {
+    CurrentMonth.push(Number(finances[i][1] ));
     
-            );
+}
 
-    }
+const PreviousMonth = [0,]; // 0 is a baseline for "easy math indexing" (Balance at the begining of the year/statement)
+for( i=1; i < finances.length; i++ ) {
+   PreviousMonth.push(Number(finances[i-1][1] ));}
+    
 
 
+/* array checksums */
+//console.log(CurrentMonth);
+// console.log(PreviousMonth);
+   
+//console.table(CurrentMonth);
+//console.table(PreviousMonth);
 
+//--------------------------------------------- Current and Previous month variables ---------------------------------
