@@ -172,21 +172,7 @@ let Total = CurrentMonth.reduce(function(a, b){
 
          // ----------------- Average Change ---------------- //
     
-    let AverageChange = ChangeInValue.reduce(function(a, b){
-        return a + b / TotalMonths;
-      });
-    
-      console.log("Average Change: " + AverageChange)
-      
-      let Change2 = ChangeInValue.shift() && ChangeInValue
-      console.log(Change2) 
 
-      const Change = arr =>{
-              // sum of the values
-        const sum = ChangeInValue.reduce((c,d) => c + d);
-        return sum;
-    
-      } 
 
     
 
