@@ -142,3 +142,56 @@ let Total = CurrentMonth.reduce(function(a, b){
 
   console.log("Total: " + Total)
 // ------------------ Total Profit/Losses End ---------------------------------
+
+
+
+// 3) the average of the changes in Profit/Losses over entire period 
+/*   * You will need to track what the total change in profits are from month to month and then find the average.
+  * (`Total/Number of months` */ 
+//--------------------------------------------- Total Profit/Loss Change Month to Month ----------------------
+    
+    const ChangeInValue=[]; 
+    console.log(ChangeInValue)
+
+
+    for (i=0;i<finances.length;i++){
+    ChangeInValue.push(Number(CurrentMonth[i]-PreviousMonth[i]))}
+    
+
+        // ----------------  array checksums ------------------------------- 
+        // console.log("Date & Value"+ finances + "\nCM Value " + CurrentMonth )
+        /* console.log("\nCM Value " + CurrentMonth  
+            + "\nPM Value " + PreviousMonth
+            + "\nChange " + ChangeInValue) */
+
+    console.log("Date & Current Value " + finances + "\nProfit/Loss Change: " + ChangeInValue)
+    
+    for (i=0;i<finances.length;i++){
+    console.table("Date: "+ finances[i][0] + "\nChange: " + ChangeInValue[i])};
+
+
+         // ----------------- Average Change ---------------- //
+    
+    let AverageChange = ChangeInValue.reduce(function(a, b){
+        return a + b / TotalMonths;
+      });
+    
+      console.log("Average Change: " + AverageChange)
+      
+      let Change2 = ChangeInValue.shift() && ChangeInValue
+      console.log(Change2) 
+
+      const Change = arr =>{
+              // sum of the values
+        const sum = ChangeInValue.reduce((c,d) => c + d);
+        return sum;
+    
+      } 
+
+    
+
+//------------------------------------------------- Total Profit/Loos Change End -------------------------
+
+
+
+
