@@ -90,7 +90,7 @@ var finances = [
 //----------------------------------------- Total Number Of Months ----------------------------------------------------------------------
     //1) the total number of months included in the dataset:
         let TotalMonths = finances.length;
-        console.log(("Total Month : "+TotalMonths))
+        // console.log(("Total Month : "+TotalMonths))
 
         //console.table(finances);
     //--------------------------------------------- Current and Previous month variables ---------------------------------------------------
@@ -122,7 +122,7 @@ var finances = [
             return a + b;
         });
 
-        console.log("Total: " + Total)
+        //console.log("Total: " + Total)
 
     // ------------------ Total Profit/Losses End ---------------------------------
 
@@ -261,34 +261,13 @@ var finances = [
         // The greatest increase in profits (date and amount) over the entire period.
         //console.log("Max Change CM: " + Math.max(...CurrentMonth));
         var MaxChange = Math.max(...ChangeInValue)
+//------------------------------------------------- The greatest decrease in losses .   
+        // The greatest decrease in losses (date and amount) over the entire period.
         var MinChange = Math.min(...ChangeInValue)
           // console.table(MonthlyDateChange)
           
         
-         
-
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ // ------------------------------------- CONSOLE LOG -------------------------------------- //
 
 
 
