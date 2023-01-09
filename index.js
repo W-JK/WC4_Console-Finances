@@ -128,8 +128,10 @@ var finances = [
 
 
 
-    // 3) The average of the changes in Profit/Losses over entire period 
-    /*   * You will need to track what the total change in profits are from month to month and then find the average.
+// -------------------------------------------- The average of the changes in Profit/Losses ---------------
+
+    //3) The average of the changes in Profit/Losses over entire period 
+         /*   * You will need to track what the total change in profits are from month to month and then find the average.
             * (`Total/Number of months` */
 
     
@@ -234,20 +236,10 @@ var finances = [
             + "\nPM Value " + PreviousMonth
             + "\nChange " + ChangeInValue) */
         //   console.table(MonthlyDateChange)  
-
-
-
-
         // console.log("Date & Current Value " + finances + "\nProfit/Loss Change: " + ChangeInValue)
-        
-
-
-        // ----------------- Average Change ---------------- //
-       /*  * The average of the **changes** in Profit/Losses over the entire period.
-            * You will need to track what the total change in profits are from month to month and then find the average.
-            * (`Total/Number of months`) */
-    
-        console.log("Average Change by financial Months:")
+        // -----------------------------------------------------------------
+   
+        // console.log("Average Change by financial Months:")
 
         let AverageChange = ChangeInValue.reduce(function(a, b){
             return a + b / TotalMonths;
@@ -260,10 +252,22 @@ var finances = [
             return a + b / 86;
           }); */
 
-    
-          console.log(Math.max(...array1));
-//------------------------------------------------- Total Profit/Loos Change End -------------------------
 
+
+
+          //console.log("Max Change: " + Math.max(...ChangeInValue));
+          //console.log("Min Change: " + Math.min(...ChangeInValue));
+//------------------------------------------------- The greatest increase in profits  -------------------------------
+        // The greatest increase in profits (date and amount) over the entire period.
+        //console.log("Max Change CM: " + Math.max(...CurrentMonth));
+        var MaxChange = Math.max(...ChangeInValue)
+        var MinChange = Math.min(...ChangeInValue)
+          // console.table(MonthlyDateChange)
+          
+        
+         
+
+      
 
 
 
@@ -293,11 +297,11 @@ var finances = [
 console.log("------------------------------------------------------------------------------------")
 
  console.log("--------------------------- Financial Analysis ------------------------------------")
- console.log("Total Months:                 " + TotalMonths)
- console.log("Total:                        " + Total) 
- console.log("Average  Change:              " + AverageChange.toFixed(2))
- console.log("Greatest Increase in Profits: ")
- console.log("Greatest Decrease in Profits: ")
+ console.log("Total Months:                  " + TotalMonths)
+ console.log("Total:                         " + Total) 
+ console.log("Average  Change:               " + AverageChange.toFixed(2))
+ console.log("Greatest Increase in Profits:  " + MaxChange)
+ console.log("Greatest Decrease in Profits: " + MinChange)
  
  
   console.log("--------------------------------------------------------------------------------------------------")
