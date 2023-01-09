@@ -1,0 +1,25 @@
+/* Jumbotron */
+.jumbotron{
+    text-align:center; 
+    text-shadow: 10%;
+    color:rgb(3, 40, 71);
+    background-image:url("../assets/busines\ pexels-fauxels-318429.jpg"); 
+         
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    height: calc(100vh - 25px);
+    display:flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;     
+    
+    } 
+
+    
+    .container{
+        align-self: flex-start;             
+        text-align: left;
+        padding: 10% ;
+    } 
+
